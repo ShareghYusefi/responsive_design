@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <style>
+      /* max-width overrides width property */
+      img {
+        /* 100% of the parent element width  */
+        width: 100%;
+        /* 100% of the original image width */
+        max-width: 500px;
+        height: auto;
+      }
+
+      .ocean {
+        background-image: url("pexels-splash-of-rain.jpg");
+        width: 100%;
+        height: 350px;
+        /* Cover the entire width of parent */
+        /* background-size: cover;  */
+        /* Contain the image */
+        /* background-size: contain; */
+        /* 100% of the width and height of the parent */
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+
+      /* We can use viewport width or height for responsive typography */
+      p {
+        font-size: 5vw; /* 5% of the viewport width */
+      }
+
+      /* vmax is the maximum of the viewport width or height */
+      /* vmin is the minimum of the viewport width or height */
+      h1 {
+        font-size: 10vmax;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Design</h1>
+    <p>There are two approach to responsive design</p>
+    <p>
+      Mobile First Approach: In this approach, we design the website for mobile
+      devices first and then scale up and add more features for larger screens.
+    </p>
+    <p>
+      Desktop First Approach: In this approach, we design the website for
+      desktop first and then scale down and remove features for smaller screens.
+    </p>
+    <img src="istockphoto.jpg" alt="Scenery of grassy hills" />
+
+    <div class="ocean"></div>
+  </body>
+</html>
